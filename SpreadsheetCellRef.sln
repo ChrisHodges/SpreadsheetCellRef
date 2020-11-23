@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpreadsheetCellRef", "SpreadsheetCellRef\SpreadsheetCellRef.csproj", "{07019028-0957-4429-9C58-128848036956}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpreadsheetCellRef.Tests", "SpreadsheetCellRef.Tests\SpreadsheetCellRef.Tests.csproj", "{A4AB91DE-AF94-4FE0-8E0D-57F5E4F698C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07019028-0957-4429-9C58-128848036956}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07019028-0957-4429-9C58-128848036956}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07019028-0957-4429-9C58-128848036956}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07019028-0957-4429-9C58-128848036956}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4AB91DE-AF94-4FE0-8E0D-57F5E4F698C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4AB91DE-AF94-4FE0-8E0D-57F5E4F698C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4AB91DE-AF94-4FE0-8E0D-57F5E4F698C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4AB91DE-AF94-4FE0-8E0D-57F5E4F698C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

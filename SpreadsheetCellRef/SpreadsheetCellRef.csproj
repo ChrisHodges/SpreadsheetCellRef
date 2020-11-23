@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>SpreadsheetCellRef</Title>
+        <Authors>ChrisHodges</Authors>
+        <Description>A simple struct to represent the address of a cell in a spreadsheet</Description>
+        <Copyright>2020 Chris Hodges</Copyright>
+    </PropertyGroup>
+
+</Project>
