@@ -203,5 +203,15 @@ namespace SpreadsheetCellRef
 
             return list;
         }
+        
+        public static bool operator ==(CellRef cr1, CellRef cr2)
+        {
+            return cr1.ColumnNumber == cr2.ColumnNumber && cr1.Row == cr2.Row;
+        }
+
+        public static bool operator !=(CellRef cr1, CellRef cr2)
+        {
+            return cr1.ColumnNumber != cr2.ColumnNumber || cr1.Row != cr2.Row;
+        }
     }
 }

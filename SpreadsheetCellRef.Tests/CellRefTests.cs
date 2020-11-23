@@ -126,5 +126,24 @@ namespace SpreadsheetCellRef.Tests
             var aa1 = new CellRef("AA1");
             aa1.ToString().Should().Be("AA1");
         }
+
+        [Fact]
+        public void EqualityWorks()
+        {
+            var cellRefA1 = new CellRef("A1");
+            var cellRefA1FromInts = new CellRef(1,1);
+            (cellRefA1 == cellRefA1FromInts).Should().BeTrue();
+            (cellRefA1 != cellRefA1FromInts).Should().BeFalse();
+        }
+        
+        [Fact]
+        public void InequalityWorks()
+        {
+            var cellRefA1 = new CellRef("A1");
+            var cellRefA2FromInts = new CellRef(1,2);
+            (cellRefA1 != cellRefA2FromInts).Should().BeTrue();
+            (cellRefA1 == cellRefA2FromInts).Should().BeFalse();
+            cellRefA1.Equals(cellRefA2FromInts).Should().BeFalse();
+        }
     }
 }
