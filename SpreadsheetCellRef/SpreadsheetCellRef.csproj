@@ -7,6 +7,11 @@
         <Authors>ChrisHodges</Authors>
         <Description>A simple struct to represent the address of a cell in a spreadsheet</Description>
         <Copyright>2020 Chris Hodges</Copyright>
+        <PackageProjectUrl>https://github.com/ChrisHodges/SpreadsheetCellRe</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/ChrisHodges/SpreadsheetCellRef/blob/master/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/ChrisHodges/SpreadsheetCellRe</RepositoryUrl>
+        <RepositoryType>Git</RepositoryType>
+        <PackageTags>Excel Spreadsheet</PackageTags>
     </PropertyGroup>
 
 </Project>

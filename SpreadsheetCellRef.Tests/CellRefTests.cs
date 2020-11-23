@@ -80,7 +80,7 @@ namespace SpreadsheetCellRef.Tests
         }
 
         [Fact]
-        public void CellNumberWorks()
+        public void ColumnNumberWorks()
         {
             var aa1 = new CellRef("AA1");
             aa1.ColumnNumber.Should().Be(27);

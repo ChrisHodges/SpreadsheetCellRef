@@ -18,6 +18,21 @@ namespace SpreadsheetCellRef
     /// </example>
     public readonly struct CellRef
     {
+        public bool Equals(CellRef other)
+        {
+            return ColumnNumber == other.ColumnNumber && Row == other.Row;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is CellRef other && Equals(other);
+        }
+
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(ColumnNumber, Row);
+        }
+
         private static readonly Regex RowAndColumnMatcher = new Regex("([A-Z]+)([0-9]+)");
         private readonly string _cellRefString;
 
