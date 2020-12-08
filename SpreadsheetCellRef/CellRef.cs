@@ -52,6 +52,10 @@ namespace SpreadsheetCellRef
         {
             _cellRefString = cellRefString;
             var matches = RowAndColumnMatcher.Match(_cellRefString);
+            if (!matches.Success)
+            {
+                throw new FormatException($"Input string was not in a correct format. Was expecting cell address in ColumnLetterRowNumber format (e.g. 'AM56') but received '{_cellRefString}'");
+            }
             Row = int.Parse(matches.Groups[2].Value);
             Column = matches.Groups[1].Value;
             ColumnNumber = ColumnNameToNumber(Column);

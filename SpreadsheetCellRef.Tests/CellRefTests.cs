@@ -37,7 +37,7 @@ namespace SpreadsheetCellRef.Tests
                 // ReSharper disable once UnusedVariable
                 var cellRef = new CellRef("Not a valid cell ref");
             };
-            action.Should().Throw<FormatException>();
+            action.Should().Throw<FormatException>().WithMessage("Input string was not in a correct format. Was expecting cell address in ColumnLetterRowNumber format (e.g. 'AM56') but received 'Not a valid cell ref'");
         }
 
         [Fact]
